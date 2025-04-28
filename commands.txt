@@ -1,0 +1,24 @@
+Docker:
+1.	docker --version
+2.	docker images
+3.	docker ps -a
+4.	docker run hello-world
+5.	docker pull nginx
+6.	docker run --name mynginx -d -p 8081:80 nginx
+7.	docker stop mynginx
+8.	docker build -t htmlpage .
+9.	docker run -d -p 8080:80 htmlpage
+
+Dockerfile:
+•	FROM nginx:alpine
+•	COPY index.html /usr/share/nginx/html/index.html
+
+Kubernetes:
+1.	kubectl get nodes
+2.	kubectl get services
+3.	kubectl get pods
+4.	kubectl version
+5.	kubectl run mypod --image=nginx
+6.	kubectl get pod -o wide
+7.	kubectl logs mypod
+8.	kubectl describe pod mypod
